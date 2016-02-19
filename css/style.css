@@ -1,0 +1,341 @@
+/*
+Project Name: Surfy Brah - Final Project
+Client: GA
+Author: Rebecca Morgan
+Developer @GA in NYC
+*/
+
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-size: 100%;
+  font-family: 'Press Start 2P', Helvetica, sans-serif;
+  font-weight: 300;
+  background: #9fdeef;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/*Header*/
+header {
+  background: #1fc4f2;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#logo {
+  width: 600px;
+  padding-left: 20%;
+}
+
+
+#release {
+  font-size: 2em;
+  padding-left: 20%;
+  padding-bottom: 1%;
+}
+
+/*CTA*/
+
+/*#scrolling {
+  position: fixed;
+}*/
+
+#cta {
+    background: #fec157;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#appstore-badge{
+  width: 300px;
+  padding-left: 35%;
+}
+
+#surfer {
+  width: 250px;
+  float: right;
+}
+
+
+/*Video Player */
+
+#video-player {
+  background: #1fc4f2;
+  width: 100%;
+}
+
+#video-thumb{
+  padding-left: 13%;
+  padding-top: 2%;
+  padding-bottom: 7%;
+}
+
+/*Gallery*/
+
+#gallery {
+  width: 100%;
+  padding: 2%;
+  background: #9eddee;
+}
+
+.thumb {
+  width: 45%;
+  margin: 1%;
+}
+
+
+#lightbox {
+    position:fixed; /* keeps the lightbox window in the current viewport */
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%; 
+    background: rgba(0,0,0,.7);; 
+    text-align:center;
+}
+
+
+#lightbox img {
+    box-shadow:0 0 25px #111;
+    -webkit-box-shadow:0 0 25px #111;
+    -moz-box-shadow:0 0 25px #111;
+    max-width:100%;
+}
+
+#lightbox p {
+    text-align:right; 
+    color:#fff; 
+    margin-right:20px; 
+    font-size:12px; 
+}
+
+/*Features*/
+
+#features{
+  background: #4ec871;
+  width: 100%;
+  margin: auto 0;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#phone{
+  width: 500px;
+  float: right;
+  margin-right: 5%;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 1.5em;
+  color: white;
+  margin-left: 5%;
+  padding-top: 2%;
+}
+
+li {
+  font-weight: 200;
+  font-size: 1em;
+  color: black;
+  margin-left: 8%;
+  padding-top: 2%;
+
+}
+
+/*Contact*/
+ #contact{
+  background: #9eddee;
+  width: 100%;
+  padding-bottom: 15%;
+}
+
+.email {
+  font-weight: 300;
+  font-size: 1em;
+  color: black;
+
+}
+
+p {
+  font-weight: 200;
+  font-size: .75em;
+  color: black;
+  margin-left: 8%;
+  padding-top: 2%;
+}
+
+a {
+  color: #1fc4f2;
+  font-weight: 600;
+
+}
+
+#social-bar{
+  padding-left: 30%;
+  padding-top: 5%;
+  clear: both;
+}
+
+
+.social{
+  float: left;
+  display: inline-block;
+  padding-left: 2%;
+}
+
+#shark {
+  width: 300px;
+  float: left;
+  padding-left: 30%;
+  position: absolute;
+}
+
+
+/*Footer*/
+
+
+footer {
+  background: #1fc4f2;
+  text-align: center;
+  clear: both;
+  padding-bottom: 1%;
+}
+
+
+#copyright {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 200;
+  padding-top: 10%;
+}
+
+
+/* MOBILE STYLE */
+
+@media only screen and (max-width: 500px){
+ 
+ /*Header Mobile*/ 
+  header {
+    width: 50%;
+  }
+
+  #release {
+    font-size: 1.25em;
+  }
+
+  #logo {
+    width: 300px;
+  }
+
+  /*CTA Mobile */
+
+  #cta {
+    width: 50%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#appstore-badge{
+  width: 150px;
+}
+
+#surfer {
+  width: 125px;
+}
+
+/*Video Player Mobile*/
+
+#video-player {
+  width: 50%;
+}
+
+#video-thumb{
+  width: 450px;
+  height: 253px;
+  padding-left: 3%;
+}
+
+h1{
+  font-size: 1em;
+}
+
+/*Gallery Mobile*/
+
+.thumb {
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 3%;
+}
+
+#lightbox img {
+    max-width: 95%;
+}
+
+/*Features Mobile*/
+
+
+.hide-mobile {
+    display: none;
+  }
+
+
+li {
+  font-size: .75em;
+}
+
+/*Features Mobile*/
+
+#features{
+  padding-top: 5%;
+  padding-bottom: 8%;
+}
+
+/*Contact Mobile*/
+ #contact{
+  padding-top: 5%;
+}
+
+.social{
+  margin: auto 0;
+  padding: 4%;
+
+}
+
+#shark {
+  width: 150px;
+  padding-left: 60%;
+}
+
+/*Footer Mobile*/
+
+
+footer {
+  padding-bottom: 35%;
+}
+
+#copyright {
+  font-size: .5em;
+  padding-bottom: 3%;
+  font-weight: 100;
+  padding-top: 5%;
+  float: right;
+}
+
+
+
+  
